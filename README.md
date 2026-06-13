@@ -13,8 +13,6 @@ This system bridges those silos. It maps a user's movie viewing history and rati
 
 ## 📐 System Architecture
 
-```mermaid
-graph TD
     UserHistory[User Movie History & Ratings] -->|Weighted Average| ProfileGen[User Preference Vector]
     MovieDB[(MongoDB: Movies)] -->|S-BERT| MovieEmbeds[Movie Embeddings]
     BookDB[(MongoDB: Books)] -->|S-BERT| BookEmbeds[Book Embeddings]
